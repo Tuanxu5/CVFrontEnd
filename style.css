@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Anca Coder", sans-serif;
+}
+body {
+  box-sizing: none;
+  width: 100%;
+  height: 1400px;
+  background-image: linear-gradient(45deg, #a6f3ca 0%, #edea93 100%);
+}
+.cv-frontend {
+  left: 50%;
+  top: 50%;
+  margin-left: -475px;
+  margin-top: -300px;
+  overflow: hidden;
+  width: 955px;
+  height: 1250px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.cv-center {
+  width: 955px;
+  height: 1250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cv-content {
+  display: grid;
+  grid-template-columns: 395px 560px;
+  flex-grow: 1 0;
+  background-color: #fff;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+}
+.cv-left {
+  margin: 0px;
+  position: relative;
+  height: 100%;
+  background-color: #e4f6d8;
+}
+.cv-left .avatar {
+  width: 100%;
+  display: block;
+  height: 315px;
+  background-color: #bfd8ad;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+img {
+  position: absolute;
+  top: 3%;
+  left: 19%;
+  display: block;
+  border-radius: 50%;
+  transition: all 0.5s;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+img:hover {
+  cursor: pointer;
+}
+.avatar .circle1,
+.avatar .circle2 {
+  align-items: center;
+  position: absolute;
+  margin-top: 28px;
+  margin-left: 66px;
+  width: 258px;
+  height: 258px;
+  border: 5px solid;
+  border-color: #1f4d21 transparent #1f4d21 #1f4d21;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 1.5s ease-in-out;
+}
+.avatar .circle2 {
+  margin-top: 19px;
+  margin-left: 57px;
+  width: 276px;
+  height: 276px;
+  border-color: #1f4d21 #1f4d21 #1f4d21 transparent;
+}
+.avatar .avatar:hover {
+  cursor: pointer;
+}
+.avatar:hover .circle1 {
+  transform: rotate(360deg);
+}
+.avatar:hover .circle2 {
+  transform: rotate(-360deg);
+}
+
+.cv-left .name-position {
+  padding: 20px 0px 50px 0px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name-position .name {
+  font-family: "Roboto Mono Regular";
+  font-size: 40px;
+  color: black;
+}
+.name-position .position {
+  font-size: 20px;
+  color: black;
+}
+.cv-left .personal-information {
+  overflow: hidden;
+  padding: 0 25px 0 25px;
+  height: auto;
+  display: flex;
+  width: calc(100% -50px);
+  flex-direction: column;
+  align-items: center;
+}
+.cv-left .personal-information span:first-child {
+  font-family: "Roboto Mono Regular";
+  text-align: left;
+  line-height: 50px;
+  font-size: 30px;
+  width: 100%;
+}
+.cv-left .personal-information span:last-child {
+  text-align: justify;
+  font-size: 13px;
+  line-height: 15px;
+  font-family: "Roboto Mono Regular";
+  width: 100%;
+}
+.br {
+  margin: 20px 0px 50px 25px;
+  width: 80px;
+  height: 6px;
+  background-color: #343434;
+}
+.cv-left .programming-skills {
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: calc(100%-50px);
+  align-items: center;
+}
+.skilldev span {
+  margin-left: -30px;
+  font-family: "Roboto Mono Regular";
+  padding: 0px;
+  text-align: left;
+  line-height: 50px;
+  font-size: 30px;
+  width: 100%;
+}
+.skills-frontend span:first-child {
+  margin-left: 25px;
+  display: flex;
+  font-size: 16px;
+  text-align: justify;
+}
+.skills-frontend span:last-child {
+  padding: 5px 0px 5px 0px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: flex;
+  font-size: 13px;
+  text-align: left;
+}
+.skills-backend span:first-child {
+  padding-top: 10px;
+  margin-left: 25px;
+  display: flex;
+  font-size: 16px;
+  text-align: justify;
+}
+.skills-backend span:last-child {
+  margin-left: 25px;
+  margin-right: 25px;
+  display: flex;
+  font-size: 13px;
+  text-align: left;
+  padding: 5px 0px 5px 0px;
+}
+.skills-data span:first-child {
+  padding-top: 10px;
+  margin-left: 25px;
+  display: flex;
+  font-size: 16px;
+  text-align: justify;
+}
+.skills-data span:last-child {
+  margin-left: 25px;
+  margin-right: 25px;
+  display: flex;
+  font-size: 13px;
+  text-align: justify;
+  padding: 5px 0px 5px 0px;
+}
+.skills-under span:first-child {
+  padding-top: 10px;
+  margin-left: 25px;
+  display: flex;
+  font-size: 15px;
+  text-align: justify;
+}
+.skills-under span:last-child {
+  margin-left: 25px;
+  display: flex;
+  font-size: 13px;
+  text-align: justify;
+  padding: 5px 0px 5px 0px;
+}
+.cv-right {
+  margin: 0px;
+  position: relative;
+  height: 100%;
+}
+.cv-right .contact {
+  background-color: #e4f6d8;
+  height: 315px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  display: block;
+}
+.contact-content {
+  margin: 90px 100px 0px 25px;
+}
+.contact-content > span {
+  font-size: 30px;
+  font-family: "Roboto Mono Regular";
+  line-height: 50px;
+}
+.contact-info > span {
+  font-size: 13px;
+  font-family: "Roboto Mono Regular";
+}
+.contact-info > span a {
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "Roboto Mono Regular";
+  color: black;
+}
+.cv-right .edu-level {
+  height: 267px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  display: block;
+}
+.edu-level-content {
+  margin: 148px 0 0 25px;
+}
+.edu-level-content > span {
+  font-size: 30px;
+  font-family: "Roboto Mono Regular";
+}
+.university-name {
+  margin-top: -20px;
+  font-size: 15px;
+}
+.majors {
+  font-size: 13px;
+}
+.majors-pro,
+.gpa {
+  font-size: 13px;
+}
+.cv-right .experien {
+  height: 210px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  text-align: justify;
+}
+.experien-content {
+  margin: 0px 100px 0px 25px;
+}
+.experien-content > span {
+  font-size: 30px;
+  font-family: "Roboto Mono Regular";
+  line-height: 50px;
+}
+.experien-content > div > span {
+  font-size: 13px;
+}
+.cv-right .project {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  text-align: left;
+}
+.project-content {
+  margin: 0px 100px 0px 25px;
+}
+.project-content > span {
+  font-size: 30px;
+  font-family: "Roboto Mono Regular";
+  line-height: 50px;
+}
+.project3 {
+  width: 100%;
+}
+.project3 span:first-child {
+  font-size: 13px;
+}
+.project3 span:last-child {
+  font-size: 13px;
+}
+.project3 span:last-child a {
+  text-decoration: none;
+  color: black;
+}
+.project4 span:last-child a {
+  text-decoration: none;
+  color: black;
+}
+.css100days span:last-child a {
+  text-decoration: none;
+  color: black;
+}
+.project4 {
+  padding: 10px 0px;
+  width: 100%;
+  color: black;
+}
+.project4 span:first-child {
+  font-size: 13px;
+  color: black;
+}
+.project4 span:last-child {
+  font-size: 13px;
+  color: black;
+}
+.css100days {
+  width: 100%;
+}
+.css100days span:first-child {
+  font-size: 13px;
+}
+.css100days span:last-child {
+  font-size: 13px;
+}
+.cv-left .target {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  text-align: left;
+}
+.target-content {
+  margin: 0px 25px 0px 25px;
+}
+.target-content > span {
+  font-size: 30px;
+  font-family: "Roboto Mono Regular";
+  line-height: 50px;
+}
+.target-content > div > span {
+  font-size: 13px;
+  font-family: "Roboto Mono Regular";
+}
+.tiktokclone {
+  color: #000;
+  padding-top: 10px;
+  font-size: 13px;
+}
+.tiktokclone span a {
+  color: #000;
+  text-decoration: none;
+}
+.tiktokclone p a {
+  color: #000;
+  text-decoration: none;
+}
